@@ -6,7 +6,7 @@ import csv
 
 # 1. Load the K matrix from the CSV file
 K = []
-with open("K_matrix.csv", "r") as f:
+with open("camera_intrinsics.csv", "r") as f:
     reader = csv.reader(f)
     for row in reader:
             K.append([float(v) for v in row])
